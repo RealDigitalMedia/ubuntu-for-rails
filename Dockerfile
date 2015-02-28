@@ -13,11 +13,6 @@ ADD etc/apt-no-cache /etc/apt/apt.conf.d/02nocache
 ADD etc/dpkg.cfg /etc/dpkg/dpkg.cfg.d/01_neocast
 
 # --------------------------------------------------------
-# Helper to shorten commands
-# --------------------------------------------------------
-ADD bin /usr/bin
-
-# --------------------------------------------------------
 # Set debconf to non-interactive mode
 # --------------------------------------------------------
 RUN echo "debconf debconf/frontend select noninteractive" | debconf-set-selections
