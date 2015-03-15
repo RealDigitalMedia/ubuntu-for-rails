@@ -62,3 +62,7 @@ RUN gem install bundler
 # ------------------------
 RUN apt-get install --yes --no-install-recommends build-essential libyaml-dev libreadline-dev libxml2-dev libxslt1-dev libffi-dev libssl-dev pkg-config libxml2 libxml2-dev libxslt1.1 libxslt1-dev libmysqlclient-dev freetds-dev mysql-client-core-5.6 
 
+# ------------------------
+# Install node for execjs
+# ------------------------
+RUN apt-get install --yes --no-install-recommends nodejs
