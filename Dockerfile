@@ -66,3 +66,9 @@ RUN apt-get install --yes --no-install-recommends build-essential libyaml-dev li
 # Install node for execjs
 # ------------------------
 RUN apt-get install --yes --no-install-recommends nodejs
+
+# ------------------------
+# Install ca-certificates
+# ------------------------
+RUN apt-get install --yes --no-install-recommends ca-certificates
+
