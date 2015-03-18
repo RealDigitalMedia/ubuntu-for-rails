@@ -72,3 +72,7 @@ RUN apt-get install --yes --no-install-recommends nodejs
 # ------------------------
 RUN apt-get install --yes --no-install-recommends ca-certificates
 
+# ------------------------
+# Install vim
+# ------------------------
+RUN apt-get install --yes --no-install-recommends vim
