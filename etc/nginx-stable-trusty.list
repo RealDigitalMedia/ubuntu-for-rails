@@ -1,1 +1,1 @@
-deb http://nginx.org/packages/mainline/ubuntu/ trusty main
+deb http://nginx.org/packages/mainline/ubuntu/ trusty nginx
