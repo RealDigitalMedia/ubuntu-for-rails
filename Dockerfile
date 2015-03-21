@@ -20,8 +20,9 @@ RUN echo "debconf debconf/frontend select noninteractive" | debconf-set-selectio
 # ------------
 # nginx repo
 # ------------
-ADD etc/nginx-stable-trusty.list /etc/apt/sources.list.d/
-RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C300EE8C
+ADD etc/nginx-mainline-trusty.list /etc/apt/sources.list.d/
+ADD etc/nginx_signing.key /tmp/
+RUN apt-key add /tmp/nginx_signing.key
 
 # ------------
 # Ruby repo
