@@ -52,7 +52,7 @@ CMD ["/bin/bash"]
 # ------------
 # Install Ruby
 # ------------
-RUN apt-get install --yes --no-install-recommends ruby2.1 ruby2.1-dev
+RUN apt-get install --yes --no-install-recommends ruby2.2 ruby2.2-dev
 RUN echo 'gem: --no-rdoc --no-ri' >> ~/.gemrc
 RUN echo ':sources:' >> ~/.gemrc
 RUN echo '- http://rubygems.org' >> ~/.gemrc
